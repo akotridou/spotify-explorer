@@ -71,7 +71,7 @@ Through this project, I practiced:
 - Organizing data using nested objects and arrays
 - Building a responsive frontend interface
 
-  ## 🌐 Live Demo
+  ## 🌐 Live Demo (https://akotridou.github.io/spotify-explorer/)
 
 [**View Live Project →**](YOUR-LIVE-URL)
 
