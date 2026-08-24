@@ -519,7 +519,7 @@ const artists = {
             {
                 title: "Laundry Service",
                 year: "2001",
-                image: "./images/shakir2.jpg",
+                image: "./images/shakir3.jpg",
                 tracks: [
                     "Whenever, Wherever",
                     "Underneath Your Clothes",
