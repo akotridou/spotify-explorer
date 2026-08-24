@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify Artist Explorer</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>
+                Spotify Artist Explorer
+
+                <img
+                    src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDExLWwyb2Jlcm5wLmpwZw.jpg"
+                    alt="Spotify logo"
+                    class="spotify-logo"
+                >
+            </h1>
+        </header>
+
+
+        <form id="srcform">
+
+            <input
+                type="text"
+                id="astistinp"
+                placeholder="e.g. Taylor Swift"
+            >
+
+            <button type="submit" id="btn">
+                Search
+            </button>
+
+        </form>
+
+
+        <div id="popular-artists">
+
+            <p>Try searching for:</p>
+
+            <div class="artist-suggestions">
+
+                <button type="button" class="artist-btn">
+                    Taylor Swift
+                </button>
+
+                <button type="button" class="artist-btn">
+                    Ariana Grande
+                </button>
+
+                <button type="button" class="artist-btn">
+                    The Weeknd
+                </button>
+
+                <button type="button" class="artist-btn">
+                    Billie Eilish
+                </button>
+
+                <button type="button" class="artist-btn">
+                    Drake
+                </button>
+                <button type="button" class="artist-btn">
+                      BTS</button>
+
+                <button type="button" class="artist-btn">
+                    Dua Lipa
+                </button>
+                 <button type="button" class="artist-btn">Ed Sheeran</button>
+                <button type="button" class="artist-btn">Lady Gaga</button>
+                <button type="button" class="artist-btn">Sabrina Carpenter</button>
+                <button type="button" class="artist-btn">Bruno Mars</button>
+                <button type="button" class="artist-btn">Olivia Rodrigo</button>
+                <button type="button" class="artist-btn">Rihanna</button>
+                <button type="button" class="artist-btn">Shakira</button>
+
+            </div>
+
+        </div>
+
+
+        <section id="artist"></section>
+
+        <section id="albums"></section>
+
+        <section id="tracks"></section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
