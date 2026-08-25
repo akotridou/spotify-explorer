@@ -41,6 +41,7 @@ The application currently includes a selection of popular artists, including:
 - Olivia Rodrigo
 - Rihanna
 - Shakira
+- Michael Jackson
 
 ## 🛠️ Built With
 
