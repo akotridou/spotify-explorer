@@ -57,20 +57,6 @@ The application currently includes a selection of popular artists, including:
 - `data-*` Attributes
 - Responsive CSS
 
-## 💡 What I Practiced
-
-Through this project, I practiced:
-
-- Selecting and manipulating DOM elements
-- Handling form submissions
-- Working with click and submit events
-- Working with JavaScript objects and arrays
-- Using `map()` and `forEach()`
-- Creating dynamic HTML with template literals
-- Using `data-*` attributes
-- Displaying content based on user interaction
-- Organizing data using nested objects and arrays
-- Building a responsive frontend interface
 
   ## 🌐 Live Demo 
 
