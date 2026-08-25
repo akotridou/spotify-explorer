@@ -199,44 +199,45 @@ const artists = {
         ]
     },
 
-    "bts": {
-    name: "BTS",
-    followers: "40M followers",
-    image: "./images/bts.jpg",
 
-    albums: [
-        {
-            title: "Proof",
-            year: "2022",
-            image: "./images/bts1.jpg",
-            tracks: [
-                "Yet To Come",
-                "Run BTS",
-                "For Youth"
-            ]
-        },
-        {
-            title: "BE",
-            year: "2020",
-            image: "./images/bts2.jpg",
-            tracks: [
-                "Life Goes On",
-                "Fly To My Room",
-                "Dynamite"
-            ]
-        },
-        {
-            title: "Map of the Soul: 7",
-            year: "2020",
-            image: "./images/bts3.jpg",
-            tracks: [
-                "ON",
-                "Black Swan",
-                "Boy With Luv"
-            ]
-        }
-    ]
-},
+    "bts": {
+        name: "BTS",
+        followers: "40M followers",
+        image: "./images/bts.jpg",
+
+        albums: [
+            {
+                title: "Proof",
+                year: "2022",
+                image: "./images/bts1.jpg",
+                tracks: [
+                    "Yet To Come",
+                    "Run BTS",
+                    "For Youth"
+                ]
+            },
+            {
+                title: "BE",
+                year: "2020",
+                image: "./images/bts2.jpg",
+                tracks: [
+                    "Life Goes On",
+                    "Fly To My Room",
+                    "Dynamite"
+                ]
+            },
+            {
+                title: "Map of the Soul: 7",
+                year: "2020",
+                image: "./images/bts3.jpg",
+                tracks: [
+                    "ON",
+                    "Black Swan",
+                    "Boy With Luv"
+                ]
+            }
+        ]
+    },
 
 
     "dua lipa": {
@@ -268,7 +269,8 @@ const artists = {
         ]
     },
 
-        "ed sheeran": {
+
+    "ed sheeran": {
         name: "Ed Sheeran",
         followers: "60M followers",
         image: "./images/ed.jpg",
@@ -306,6 +308,7 @@ const artists = {
             }
         ]
     },
+
 
     "lady gaga": {
         name: "Lady Gaga",
@@ -346,6 +349,7 @@ const artists = {
         ]
     },
 
+
     "sabrina carpenter": {
         name: "Sabrina Carpenter",
         followers: "50M followers",
@@ -384,6 +388,7 @@ const artists = {
             }
         ]
     },
+
 
     "bruno mars": {
         name: "Bruno Mars",
@@ -424,6 +429,7 @@ const artists = {
         ]
     },
 
+
     "olivia rodrigo": {
         name: "Olivia Rodrigo",
         followers: "40M followers",
@@ -451,7 +457,10 @@ const artists = {
                 ]
             }
         ]
-    },    "rihanna": {
+    },
+
+
+    "rihanna": {
         name: "Rihanna",
         followers: "80M followers",
         image: "./images/rih.jpg",
@@ -490,6 +499,7 @@ const artists = {
         ]
     },
 
+
     "shakira": {
         name: "Shakira",
         followers: "50M followers",
@@ -527,7 +537,48 @@ const artists = {
                 ]
             }
         ]
+    },
+
+
+    "michael jackson": {
+        name: "Michael Jackson",
+        followers: "35M followers",
+        image: "./images/michael.jpg",
+
+        albums: [
+            {
+                title: "Thriller",
+                year: "1982",
+                image: "./images/michael1.jpg",
+                tracks: [
+                    "Wanna Be Startin' Somethin'",
+                    "Billie Jean",
+                    "Thriller"
+                ]
+            },
+            {
+                title: "Bad",
+                year: "1987",
+                image: "./images/michael2.jpg",
+                tracks: [
+                    "Bad",
+                    "The Way You Make Me Feel",
+                    "Man in the Mirror"
+                ]
+            },
+            {
+                title: "Dangerous",
+                year: "1991",
+                image: "./images/michael3.jpg",
+                tracks: [
+                    "Black or White",
+                    "Remember the Time",
+                    "Heal the World"
+                ]
+            }
+        ]
     }
+
 };
 
 
@@ -543,17 +594,60 @@ form.addEventListener("submit", (ev) => {
 
     const selectedArtist = artists[searchTerm];
 
+
     if (!selectedArtist) {
 
-        artistSection.innerHTML = `
-            <div class="not-found">
-                <h2>Artist not found</h2>
-                <p>
-                    Sorry about that. Try instead Taylor Swift, Ariana Grande, The Weeknd,
-                    Billie Eilish, Drake, BTS, Dua Lipa, Ed Sheeran, Lady Gaga, Sabrina Carpenter, Bruno Mars, Olivia Rodrigo, Rihanna or Shakira
-                </p>
-            </div>
-        `;
+        const matchingArtist = Object.values(artists).find((artist) => {
+            return artist.name.toLowerCase().includes(searchTerm);
+        });
+
+
+        if (matchingArtist) {
+
+            artistSection.innerHTML = `
+                <div class="not-found">
+
+                    <h2>Artist not found</h2>
+
+                    <p>
+                        Do you mean
+                        <button class="suggestion-btn">
+                            ${matchingArtist.name}
+                        </button>?
+                    </p>
+
+                </div>
+            `;
+
+
+            const suggestionBtn =
+                document.querySelector(".suggestion-btn");
+
+
+            suggestionBtn.addEventListener("click", () => {
+
+                input.value = matchingArtist.name;
+
+                form.dispatchEvent(new Event("submit"));
+
+            });
+
+
+        } else {
+
+            artistSection.innerHTML = `
+                <div class="not-found">
+
+                    <h2>Artist not found</h2>
+
+                    <p>
+                        Sorry about that. Try instead one of the buttons above. Have a nice day!!
+                    </p>
+
+                </div>
+            `;
+        }
+
 
         albumsSection.innerHTML = "";
         tracksSection.innerHTML = "";
@@ -571,11 +665,13 @@ form.addEventListener("submit", (ev) => {
             >
 
             <div>
+
                 <p>Artist</p>
 
                 <h2>${selectedArtist.name}</h2>
 
                 <span>${selectedArtist.followers}</span>
+
             </div>
 
         </div>
@@ -614,13 +710,16 @@ form.addEventListener("submit", (ev) => {
     showTracks(selectedArtist.albums[0]);
 
 
-    const albumCards = document.querySelectorAll(".album-card");
+    const albumCards =
+        document.querySelectorAll(".album-card");
+
 
     albumCards.forEach((card) => {
 
         card.addEventListener("click", () => {
 
-            const albumIndex = card.dataset.index;
+            const albumIndex =
+                card.dataset.index;
 
             const selectedAlbum =
                 selectedArtist.albums[albumIndex];
@@ -640,9 +739,12 @@ artistButtons.forEach((button) => {
 
     button.addEventListener("click", () => {
 
-        input.value = button.textContent.trim();
+        input.value =
+            button.textContent.trim();
 
-        form.dispatchEvent(new Event("submit"));
+        form.dispatchEvent(
+            new Event("submit")
+        );
 
     });
 
