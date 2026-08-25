@@ -12,7 +12,7 @@ const artists = {
 
     "taylor swift": {
         name: "Taylor Swift",
-        followers: "95M followers",
+        followers: "162.6M followers",
         image: "./images/taylor.jpg",
 
         albums: [
@@ -62,7 +62,7 @@ const artists = {
 
     "ariana grande": {
         name: "Ariana Grande",
-        followers: "90M followers",
+        followers: "114.6M followers",
         image: "./images/ariana.jpg",
 
         albums: [
@@ -102,7 +102,7 @@ const artists = {
 
     "the weeknd": {
         name: "The Weeknd",
-        followers: "70M followers",
+        followers: "126.5M followers",
         image: "./images/weeknd.jpg",
 
         albums: [
@@ -142,7 +142,7 @@ const artists = {
 
     "billie eilish": {
         name: "Billie Eilish",
-        followers: "70M followers",
+        followers: "128M followers",
         image: "./images/billie.jpg",
 
         albums: [
@@ -202,7 +202,7 @@ const artists = {
 
     "bts": {
         name: "BTS",
-        followers: "40M followers",
+        followers: "85M followers",
         image: "./images/bts.jpg",
 
         albums: [
@@ -242,7 +242,7 @@ const artists = {
 
     "dua lipa": {
         name: "Dua Lipa",
-        followers: "60M followers",
+        followers: "65M followers",
         image: "./images/dua.jpg",
 
         albums: [
@@ -272,7 +272,7 @@ const artists = {
 
     "ed sheeran": {
         name: "Ed Sheeran",
-        followers: "60M followers",
+        followers: "127M followers",
         image: "./images/ed.jpg",
 
         albums: [
@@ -312,7 +312,7 @@ const artists = {
 
     "lady gaga": {
         name: "Lady Gaga",
-        followers: "60M followers",
+        followers: "70M followers",
         image: "./images/lady.jpg",
 
         albums: [
@@ -352,7 +352,7 @@ const artists = {
 
     "sabrina carpenter": {
         name: "Sabrina Carpenter",
-        followers: "50M followers",
+        followers: "55M followers",
         image: "./images/sabrina.jpg",
 
         albums: [
@@ -392,7 +392,7 @@ const artists = {
 
     "bruno mars": {
         name: "Bruno Mars",
-        followers: "50M followers",
+        followers: "87M followers",
         image: "./images/bruno.jpg",
 
         albums: [
@@ -432,7 +432,7 @@ const artists = {
 
     "olivia rodrigo": {
         name: "Olivia Rodrigo",
-        followers: "40M followers",
+        followers: "50M followers",
         image: "./images/olivia.jpg",
 
         albums: [
@@ -462,7 +462,7 @@ const artists = {
 
     "rihanna": {
         name: "Rihanna",
-        followers: "80M followers",
+        followers: "73M followers",
         image: "./images/rih.jpg",
 
         albums: [
@@ -502,7 +502,7 @@ const artists = {
 
     "shakira": {
         name: "Shakira",
-        followers: "50M followers",
+        followers: "65M followers",
         image: "./images/shakira.jpg",
 
         albums: [
@@ -542,7 +542,7 @@ const artists = {
 
     "michael jackson": {
         name: "Michael Jackson",
-        followers: "35M followers",
+        followers: "97M followers",
         image: "./images/michael.jpg",
 
         albums: [
