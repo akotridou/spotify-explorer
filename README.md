@@ -4,6 +4,10 @@ A small frontend project inspired by Spotify's music exploration experience.
 
 > **Note:** This project is not a Spotify clone and is not connected to the Spotify API. It is a small personal project inspired by Spotify's design and concept of exploring artists, albums, and tracks.
 
+
+  ## 🌐 Live Demo 
+[**View Live Project →**](https://akotridou.github.io/spotify-explorer/)
+
 ## ✨ Features
 
 - 🔎 Search for artists
@@ -13,7 +17,6 @@ A small frontend project inspired by Spotify's music exploration experience.
 - ⚡ Quick-search buttons for available artists
 - 📱 Responsive design
 - 🎨 Dark, Spotify-inspired interface
-- 🖼️ Artist and album artwork
 
 ## 🎯 About the Project
 
@@ -23,7 +26,17 @@ Users can search for artists included in the project's dataset and explore their
 
 The project uses locally defined data rather than an external music API.
 
-## 🎤 Artists
+
+## 🛠️ Built With
+
+- HTML
+- CSS
+- JavaScript
+- DOM Manipulation
+- Event Listeners
+- Objects & Arrays
+
+  ## 🎤 Artists
 
 The application currently includes a selection of popular artists, including:
 
@@ -43,22 +56,4 @@ The application currently includes a selection of popular artists, including:
 - Shakira
 - Michael Jackson
 
-## 🛠️ Built With
-
-- HTML5
-- CSS3
-- JavaScript
-- DOM Manipulation
-- Event Listeners
-- Objects & Arrays
-- `map()`
-- `forEach()`
-- Template Literals
-- `data-*` Attributes
-- Responsive CSS
-
-
-  ## 🌐 Live Demo 
-
-[**View Live Project →**](https://akotridou.github.io/spotify-explorer/)
 
